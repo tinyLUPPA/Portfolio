@@ -1,0 +1,317 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title strictly fulfills Assignment Requirement 9 -->
+  <title>My Interests and Favorite Links | Muhammad Yusuf Bin Alias</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body id="top">
+
+  <!-- Ambient Glow -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-bracket">&lt;</span>YUSUF<span class="logo-accent">.DEV</span><span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Pure CSS Mobile Menu Toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span class="hamburger"></span>
+      </label>
+
+      <nav class="nav-links">
+        <a href="index.html">Home <span class="nav-tag">/&gt;</span></a>
+        <a href="about.html">About <span class="nav-tag">/&gt;</span></a>
+        <a href="awards.html">Awards <span class="nav-tag">/&gt;</span></a>
+        <a href="experience.html">Experience <span class="nav-tag">/&gt;</span></a>
+        <a href="technology.html">Tech <span class="nav-tag">/&gt;</span></a>
+        <a href="interests.html" class="active">Interests <span class="nav-tag">/&gt;</span></a>
+        <a href="contact.html" class="btn-nav">Contact <span class="nav-tag" >/&gt;</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header Banner -->
+  <section class="page-header-section">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <span>My Interests and Favorite Links</span>
+      </nav>
+      <h1 class="page-banner-title">
+        My Interests &amp; <span class="text-gradient">Favorite Links</span>
+      </h1>
+      <p class="page-banner-desc">
+        Explore personal passions, cybersecurity hobbies, Capture The Flag (CTF) practice communities, and handpicked external web resources.
+      </p>
+
+      <!-- Internal Hyperlink with Anchor Text (Requirement 4.v) -->
+      <nav class="page-nav-bar" aria-label="Page Sections">
+        <span class="nav-bar-label">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+          Sections
+        </span>
+        <a href="#hobbies-overview" class="nav-pill-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          Hobbies &amp; Activities
+        </a>
+        <a href="#favorite-links" class="nav-pill-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          Favorite Resources
+        </a>
+        <a href="#social-footprint" class="nav-pill-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          Social Channels
+        </a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Hobbies & Personal Interests Section (Requirement 9) -->
+  <section id="hobbies-overview" class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// PERSONAL PURSUITS</span>
+        <h2 class="section-title">Hobbies &amp; Activities</h2>
+        <p class="section-subtitle">Beyond formal academics, I continuously engage in competitive computing and digital arts.</p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Hobby 1 -->
+        <div class="glass-panel">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 style="font-size:1.2rem; margin-bottom:0.5rem; color:#fff;">CTF &amp; Ethical Hacking</h3>
+          <p style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:1rem;">
+            Regularly practicing on platforms like Hack The Box and TryHackMe. Analyzing vulnerable machines, reverse engineering binaries, and discovering network vulnerabilities.
+          </p>
+          <ul style="padding-left:1.25rem; color:var(--text-muted); font-size:0.85rem; line-height:1.6;">
+            <li>Web exploitation &amp; SQL injection testing</li>
+            <li>Privilege escalation techniques</li>
+            <li>Binary forensics &amp; packet inspection</li>
+          </ul>
+        </div>
+
+        <!-- Hobby 2 -->
+        <div class="glass-panel">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          </div>
+          <h3 style="font-size:1.2rem; margin-bottom:0.5rem; color:#fff;">OSINT &amp; Fraud Investigation</h3>
+          <p style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:1rem;">
+            Deep passion for tracking online scams and malicious infrastructure. Using public registries, DNS logs, and geolocation tools to protect vulnerable online users.
+          </p>
+          <ul style="padding-left:1.25rem; color:var(--text-muted); font-size:0.85rem; line-height:1.6;">
+            <li>Phishing domain footprinting</li>
+            <li>Digital footprint mapping</li>
+            <li>Social engineering pattern research</li>
+          </ul>
+        </div>
+
+        <!-- Hobby 3 -->
+        <div class="glass-panel">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+          </div>
+          <h3 style="font-size:1.2rem; margin-bottom:0.5rem; color:#fff;">Creative Digital Design</h3>
+          <p style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:1rem;">
+            Creating modern cyber-themed user interfaces, diagrams, and digital graphics. Emphasizing typography, color psychology, and dark-mode ergonomics.
+          </p>
+          <ul style="padding-left:1.25rem; color:var(--text-muted); font-size:0.85rem; line-height:1.6;">
+            <li>Modern CSS3 layout architectures</li>
+            <li>High-contrast user experience design</li>
+            <li>Vector icon design &amp; branding</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Favorite External Links Section (Strictly fulfills Requirement 9 with 4+ links) -->
+  <section id="favorite-links" class="section bg-tint">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// CURATED RESOURCES</span>
+        <h2 class="section-title">My Favorite Web Links</h2>
+        <p class="section-subtitle">A collection of external websites I frequently visit to learn, train, and track security updates.</p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="skills-grid">
+        <!-- External Link 1 -->
+        <div class="glass-panel external-link-card">
+          <div>
+            <span class="link-tag">ETHICAL HACKING LAB</span>
+            <h3 style="font-size:1.15rem; color:#fff; margin-bottom:0.5rem;">Hack The Box (HTB)</h3>
+            <p style="color:var(--text-muted); font-size:0.88rem; line-height:1.6;">
+              A gamified cyber security performance platform offering virtual penetration testing labs, CTF challenges, and real-world attack simulations.
+            </p>
+          </div>
+          <!-- Requirement 4.vi: External hyperlink with anchor text -->
+          <a href="https://www.hackthebox.com" target="_blank" rel="noopener noreferrer" class="ext-btn">
+            Visit Hack The Box Online Community &rarr;
+          </a>
+        </div>
+
+        <!-- External Link 2 -->
+        <div class="glass-panel external-link-card">
+          <div>
+            <span class="link-tag">CYBER THREAT INVESTIGATION</span>
+            <h3 style="font-size:1.15rem; color:#fff; margin-bottom:0.5rem;">Krebs on Security</h3>
+            <p style="color:var(--text-muted); font-size:0.88rem; line-height:1.6;">
+              Award-winning investigative journalism by Brian Krebs, uncovering global cybercrime cartels, ATM skimming networks, and major corporate data breaches.
+            </p>
+          </div>
+          <a href="https://krebsonsecurity.com" target="_blank" rel="noopener noreferrer" class="ext-btn">
+            Read Krebs on Security Investigations &rarr;
+          </a>
+        </div>
+
+        <!-- External Link 3 -->
+        <div class="glass-panel external-link-card">
+          <div>
+            <span class="link-tag">BEGINNER &amp; ADVANCED CTF</span>
+            <h3 style="font-size:1.15rem; color:#fff; margin-bottom:0.5rem;">OverTheWire Wargames</h3>
+            <p style="color:var(--text-muted); font-size:0.88rem; line-height:1.6;">
+              A premier collection of hands-on security wargames covering basic Linux terminal command-lines up to advanced binary exploitation.
+            </p>
+          </div>
+          <a href="https://overthewire.org/wargames/" target="_blank" rel="noopener noreferrer" class="ext-btn">
+            Play OverTheWire Security Wargames &rarr;
+          </a>
+        </div>
+
+        <!-- External Link 4 -->
+        <div class="glass-panel external-link-card">
+          <div>
+            <span class="link-tag">CREATIVE DESIGN INSPIRATION</span>
+            <h3 style="font-size:1.15rem; color:#fff; margin-bottom:0.5rem;">Behance Creative Network</h3>
+            <p style="color:var(--text-muted); font-size:0.88rem; line-height:1.6;">
+              The world's largest creative network for showcasing and discovering graphic design, digital art, UI/UX interaction models, and web concepts.
+            </p>
+          </div>
+          <a href="https://www.behance.net" target="_blank" rel="noopener noreferrer" class="ext-btn">
+            Explore Behance Graphic Showcase &rarr;
+          </a>
+        </div>
+
+        <!-- External Link 5 -->
+        <div class="glass-panel external-link-card">
+          <div>
+            <span class="link-tag">CROWDSOURCED SECURITY</span>
+            <h3 style="font-size:1.15rem; color:#fff; margin-bottom:0.5rem;">HackerOne Bug Bounty Platform</h3>
+            <p style="color:var(--text-muted); font-size:0.88rem; line-height:1.6;">
+              The leading vulnerability coordination and bug bounty platform connecting businesses with ethical security researchers across the globe.
+            </p>
+          </div>
+          <a href="https://www.hackerone.com" target="_blank" rel="noopener noreferrer" class="ext-btn">
+            Explore HackerOne Bug Bounty Platform &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Personal Developer & Social Footprint -->
+  <section id="social-footprint" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// ONLINE PRESENCE</span>
+        <h2 class="section-title">My Developer &amp; Social Footprint</h2>
+        <p class="section-subtitle">Connect with me across developer networks, creative showcases, and community channels.</p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="social-showcase-grid">
+        <!-- Card 1: GitHub -->
+        <a href="https://github.com/tinyLUPPA" target="_blank" rel="noopener noreferrer" class="social-card glass-panel tilt-card">
+          <div class="social-card-top">
+            <div class="social-card-icon" style="color:#f0f6fc; background:rgba(240, 246, 252, 0.08); border-color:rgba(240, 246, 252, 0.2);">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </div>
+            <span class="social-card-handle">@tinyLUPPA</span>
+          </div>
+          <div>
+            <h3 class="social-card-title">GitHub Profile</h3>
+            <p class="social-card-desc">Where tinyLUPPA builds software. Open source repositories, CTF tools, and university web projects.</p>
+          </div>
+        </a>
+
+        <!-- Card 2: X (Twitter) -->
+        <a href="https://x.com/tinyLUPPA_" target="_blank" rel="noopener noreferrer" class="social-card glass-panel tilt-card">
+          <div class="social-card-top">
+            <div class="social-card-icon" style="color:#38bdf8; background:rgba(56, 189, 248, 0.08); border-color:rgba(56, 189, 248, 0.2);">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </div>
+            <span class="social-card-handle">@tinyLUPPA_</span>
+          </div>
+          <div>
+            <h3 class="social-card-title">X (Twitter)</h3>
+            <p class="social-card-desc">YUSUF Necros. Tech insights, cybersecurity news commentary, and developer discourse.</p>
+          </div>
+        </a>
+
+        <!-- Card 3: Instagram -->
+        <a href="https://www.instagram.com/tinyluppa" target="_blank" rel="noopener noreferrer" class="social-card glass-panel tilt-card">
+          <div class="social-card-top">
+            <div class="social-card-icon" style="color:#ec4899; background:rgba(236, 72, 153, 0.08); border-color:rgba(236, 72, 153, 0.2);">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </div>
+            <span class="social-card-handle">@tinyluppa</span>
+          </div>
+          <div>
+            <h3 class="social-card-title">Instagram</h3>
+            <p class="social-card-desc">Personal updates, university life at UC TATI, visual media, and student achievements.</p>
+          </div>
+        </a>
+
+        <!-- Card 4: Facebook -->
+        <a href="https://www.facebook.com/share/1FAkYouaUz/" target="_blank" rel="noopener noreferrer" class="social-card glass-panel tilt-card">
+          <div class="social-card-top">
+            <div class="social-card-icon" style="color:#3b82f6; background:rgba(59, 130, 246, 0.08); border-color:rgba(59, 130, 246, 0.2);">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </div>
+            <span class="social-card-handle">Yusuf Alias</span>
+          </div>
+          <div>
+            <h3 class="social-card-title">Facebook</h3>
+            <p class="social-card-desc">Connect with Yusuf Alias. Academic networks, friends, and community announcements.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer with Exact Requirement 12 Format -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>Yusuf_24B10I007©Copyright.2026</p>
+      <div class="footer-social-links">
+        <a href="https://github.com/tinyLUPPA" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://x.com/tinyLUPPA_" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
+        <a href="https://www.instagram.com/tinyluppa" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/share/1FAkYouaUz/" target="_blank" rel="noopener noreferrer">Facebook</a>
+      </div>
+      <div class="footer-links">
+        <a href="#top" class="jump-link">Back to Top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Yasio.dev Trailing Mouse Cursor Script -->
+  <script src="cursor.js"></script>
+</body>
+</html>

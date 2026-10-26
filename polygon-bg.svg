@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" fill="none">
+  <!-- Deep Background Gradient -->
+  <rect width="1920" height="1080" fill="#0b0a14"/>
+  
+  <defs>
+    <!-- Facet Gradients -->
+    <linearGradient id="poly1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.01"/>
+    </linearGradient>
+    <linearGradient id="poly2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#1e1b4b" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="poly3" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.01"/>
+    </linearGradient>
+    <linearGradient id="glowPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Radial Glows -->
+  <circle cx="350" cy="400" r="500" fill="url(#glowPurple)" filter="blur(80px)"/>
+  <circle cx="1600" cy="550" r="600" fill="url(#glowPurple)" filter="blur(90px)"/>
+
+  <!-- Low-Poly Geometric Shards & Facets (Yasio.dev style) -->
+  <g stroke="rgba(255, 255, 255, 0.05)" stroke-width="1" stroke-linejoin="round">
+    <!-- Left Region Clusters -->
+    <polygon points="120,80 380,240 180,420" fill="url(#poly1)" />
+    <polygon points="180,420 380,240 490,490" fill="url(#poly2)" />
+    <polygon points="120,80 180,420 -40,320" fill="url(#poly3)" />
+    <polygon points="-40,320 180,420 80,720" fill="url(#poly1)" />
+    <polygon points="180,420 490,490 320,780" fill="url(#poly2)" />
+    <polygon points="80,720 180,420 320,780" fill="url(#poly3)" />
+    <polygon points="320,780 490,490 610,740" fill="url(#poly1)" />
+    <polygon points="320,780 610,740 450,1020" fill="url(#poly2)" />
+    <polygon points="80,720 320,780 140,1060" fill="url(#poly3)" />
+
+    <!-- Center Constellation Mesh -->
+    <polygon points="380,240 720,160 490,490" fill="url(#poly3)" />
+    <polygon points="720,160 980,310 490,490" fill="url(#poly1)" />
+    <polygon points="490,490 980,310 820,620" fill="url(#poly2)" />
+    <polygon points="490,490 820,620 610,740" fill="url(#poly3)" />
+    <polygon points="610,740 820,620 910,880" fill="url(#poly1)" />
+    <polygon points="610,740 910,880 750,1040" fill="url(#poly2)" />
+
+    <!-- Right Region Clusters -->
+    <polygon points="720,160 1240,90 980,310" fill="url(#poly2)" />
+    <polygon points="980,310 1240,90 1380,320" fill="url(#poly1)" />
+    <polygon points="980,310 1380,320 1190,580" fill="url(#poly3)" />
+    <polygon points="980,310 1190,580 820,620" fill="url(#poly2)" />
+    <polygon points="820,620 1190,580 1110,860" fill="url(#poly1)" />
+    <polygon points="820,620 1110,860 910,880" fill="url(#poly3)" />
+
+    <!-- Far Right Clusters -->
+    <polygon points="1240,90 1620,180 1380,320" fill="url(#poly3)" />
+    <polygon points="1380,320 1620,180 1780,440" fill="url(#poly1)" />
+    <polygon points="1380,320 1780,440 1520,610" fill="url(#poly2)" />
+    <polygon points="1190,580 1380,320 1520,610" fill="url(#poly3)" />
+    <polygon points="1190,580 1520,610 1440,890" fill="url(#poly1)" />
+    <polygon points="1190,580 1440,890 1110,860" fill="url(#poly2)" />
+    <polygon points="1520,610 1780,440 1960,650" fill="url(#poly1)" />
+    <polygon points="1520,610 1960,650 1720,920" fill="url(#poly3)" />
+    <polygon points="1440,890 1520,610 1720,920" fill="url(#poly2)" />
+    <polygon points="1110,860 1440,890 1380,1090" fill="url(#poly3)" />
+  </g>
+
+  <!-- Constellation Nodes / Points -->
+  <g fill="#a855f7" opacity="0.6">
+    <circle cx="380" cy="240" r="2.5"/>
+    <circle cx="490" cy="490" r="3.5" fill="#38bdf8" opacity="0.8"/>
+    <circle cx="720" cy="160" r="2.5"/>
+    <circle cx="980" cy="310" r="3"/>
+    <circle cx="820" cy="620" r="3.5" fill="#a855f7" opacity="0.9"/>
+    <circle cx="1190" cy="580" r="3" fill="#38bdf8"/>
+    <circle cx="1380" cy="320" r="2.5"/>
+    <circle cx="1520" cy="610" r="3"/>
+    <circle cx="610" cy="740" r="2.5"/>
+    <circle cx="1110" cy="860" r="2.5"/>
+  </g>
+</svg>

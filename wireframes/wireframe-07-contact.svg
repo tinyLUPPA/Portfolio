@@ -1,0 +1,265 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 980" width="1200" height="980">
+  <defs>
+    <pattern id="wf-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#F1F5F9" stroke-width="0.8" />
+    </pattern>
+  </defs>
+
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .wf-h1 { font-size: 24px; font-weight: 700; fill: #111827; }
+    .wf-h2 { font-size: 18px; font-weight: 700; fill: #111827; }
+    .wf-h3 { font-size: 14px; font-weight: 700; fill: #111827; }
+    .wf-body { font-size: 11px; fill: #374151; line-height: 1.5; }
+    .wf-caption { font-size: 10px; fill: #6B7280; font-family: monospace; }
+    .wf-label { font-size: 9px; font-weight: 700; fill: #111827; letter-spacing: 0.5px; text-transform: uppercase; }
+    .box-border { stroke: #111827; stroke-width: 1.5; fill: #FFFFFF; }
+    .box-subtle { stroke: #D1D5DB; stroke-width: 1; fill: #F9FAFB; }
+    .img-x { stroke: #D1D5DB; stroke-width: 1; }
+    .text-line { stroke: #9CA3AF; stroke-width: 4; stroke-linecap: round; }
+    .text-line-thin { stroke: #9CA3AF; stroke-width: 2.5; stroke-linecap: round; }
+  </style>
+
+  <!-- Clean Canvas Background -->
+  <rect width="1200" height="980" fill="#FFFFFF"/>
+  <rect width="1200" height="980" fill="url(#wf-grid)"/>
+
+  <!-- Top Metadata Bar (Assignment & Sheet Details) -->
+  <g id="sheet-header">
+    <rect x="0" y="0" width="1200" height="60" fill="#FFFFFF" stroke="#111827" stroke-width="1.5"/>
+    
+    <!-- Left Sheet Title -->
+    <text x="32" y="25" class="wf-label" fill="#374151">TRADITIONAL WIREFRAME // SHEET 07 OF 07</text>
+    <text x="32" y="46" font-size="16" font-weight="700" fill="#111827">CONTACT &amp;amp; INQUIRIES <tspan font-weight="400" fill="#6B7280">(contact.html)</tspan></text>
+
+    <!-- Center Assignment Info -->
+    <rect x="440" y="14" width="320" height="32" rx="3" fill="#F9FAFB" stroke="#D1D5DB" stroke-width="1"/>
+    <text x="600" y="34" font-size="11" font-weight="700" fill="#111827" text-anchor="middle">BCS 3584 &#8226; WEB APPLICATION DEVELOPMENT</text>
+
+    <!-- Right Student Meta -->
+    <text x="1168" y="25" font-size="11" fill="#374151" text-anchor="end">STUDENT: <tspan font-weight="700" fill="#111827">Muhammad Yusuf Bin Alias</tspan></text>
+    <text x="1168" y="46" font-size="11" fill="#374151" text-anchor="end">MATRIC: <tspan font-weight="700" fill="#111827">Yusuf_24B10I007</tspan> | DESKTOP 1120px</text>
+  </g>
+
+  <!-- Browser Window Frame Simulation -->
+  <g id="browser-window" transform="translate(40, 75)">
+    <!-- Browser Titlebar -->
+    <rect x="0" y="0" width="1120" height="36" rx="4" fill="#F9FAFB" stroke="#111827" stroke-width="1.5"/>
+    <circle cx="18" cy="18" r="4.5" fill="none" stroke="#111827" stroke-width="1.2"/>
+    <circle cx="32" cy="18" r="4.5" fill="none" stroke="#111827" stroke-width="1.2"/>
+    <circle cx="46" cy="18" r="4.5" fill="none" stroke="#111827" stroke-width="1.2"/>
+
+    <!-- URL Bar -->
+    <rect x="70" y="6" width="600" height="24" rx="2" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+    <text x="82" y="22" font-size="11" fill="#374151" font-family="monospace">https://yusuf.dev/contact.html</text>
+
+    <!-- Scale Indicator -->
+    <text x="1105" y="22" class="wf-caption" text-anchor="end">1120 &#215; 850px</text>
+  </g>
+
+  <!-- Page Canvas Body -->
+  <g id="wireframe-content" transform="translate(40, 111)">
+    <rect x="0" y="0" width="1120" height="850" fill="#FFFFFF" stroke="#111827" stroke-width="1.5"/>
+    
+    <!-- [HEADER / NAVBAR] -->
+    <g id="nav-header" transform="translate(0, 0)">
+      <rect x="0" y="0" width="1120" height="54" fill="#FFFFFF" stroke="#111827" stroke-width="1.5"/>
+      
+      <!-- Brand Logo Box -->
+      <rect x="30" y="12" width="120" height="30" fill="#F9FAFB" stroke="#111827" stroke-width="1.2"/>
+      <text x="90" y="31" font-size="12" font-weight="700" fill="#111827" text-anchor="middle">&lt;YUSUF.DEV/&gt;</text>
+      
+      <!-- Nav Items -->
+      <g transform="translate(420, 14)">
+        <g transform="translate(0, 0)">
+          <text x="0" y="17" font-size="11" font-weight="400" fill="#111827">Home /&gt;</text>
+        </g>
+        <g transform="translate(86, 0)">
+          <text x="0" y="17" font-size="11" font-weight="400" fill="#111827">About /&gt;</text>
+        </g>
+        <g transform="translate(172, 0)">
+          <text x="0" y="17" font-size="11" font-weight="400" fill="#111827">Awards /&gt;</text>
+        </g>
+        <g transform="translate(258, 0)">
+          <text x="0" y="17" font-size="11" font-weight="400" fill="#111827">Experience /&gt;</text>
+        </g>
+        <g transform="translate(344, 0)">
+          <text x="0" y="17" font-size="11" font-weight="400" fill="#111827">Tech /&gt;</text>
+        </g>
+        <g transform="translate(430, 0)">
+          <text x="0" y="17" font-size="11" font-weight="400" fill="#111827">Interests /&gt;</text>
+        </g>
+        <g transform="translate(516, 0)">
+          <rect x="0" y="0" width="95" height="26" rx="3" fill="#111827" stroke="#111827" stroke-width="1.5"/>
+          <text x="47" y="17" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">Contact /&gt;</text>
+        </g>
+      </g>
+    </g>
+    <!-- [PAGE HEADER BANNER] -->
+    <g id="page-banner" transform="translate(0, 54)">
+      <rect x="0" y="0" width="1120" height="115" fill="#F9FAFB" stroke="#111827" stroke-width="1"/>
+      
+      <!-- Breadcrumb -->
+      <text x="35" y="28" class="wf-caption">Home / Contact Me</text>
+      
+      <!-- Title & Subtitle -->
+      <text x="35" y="55" class="wf-h1">Let's Connect &amp;amp; Collaborate</text>
+      <text x="35" y="74" class="wf-body">Direct communication channels, interactive WhatsApp dispatcher, and social networks.</text>
+      
+      <!-- Internal In-page Jump Anchor Bar -->
+      <g transform="translate(35, 86)">
+        <text x="0" y="14" class="wf-label">SECTIONS:</text>
+        <rect x="70" y="0" width="104" height="20" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+        <text x="122" y="14" font-size="9" fill="#374151" text-anchor="middle"># message-form</text>
+        <rect x="182" y="0" width="104" height="20" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+        <text x="234" y="14" font-size="9" fill="#374151" text-anchor="middle"># contact-info</text>
+        <rect x="294" y="0" width="125" height="20" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+        <text x="356" y="14" font-size="9" fill="#374151" text-anchor="middle"># social-channels</text>
+      </g>
+    </g>
+    <!-- [CONTACT HUB - 2 COLUMNS] -->
+    <g id="contact-hub" transform="translate(0, 185)">
+      
+      <!-- Left Column: Direct Info -->
+      <g id="contact-info" transform="translate(35, 20)">
+        <rect x="0" y="0" width="480" height="400" fill="#FFFFFF" stroke="#111827" stroke-width="1.2"/>
+        <text x="20" y="28" class="wf-label">// DIRECT CHANNELS</text>
+        <text x="20" y="50" class="wf-h2">Contact Details</text>
+
+        <!-- WhatsApp Box -->
+        <g transform="translate(20, 75)">
+          <rect x="0" y="0" width="440" height="60" fill="#F9FAFB" stroke="#111827" stroke-width="1"/>
+          <text x="20" y="26" class="wf-caption">WHATSAPP LINE</text>
+          <text x="20" y="46" class="wf-h3">+6012-806-5383</text>
+        </g>
+
+        <!-- Email Box -->
+        <g transform="translate(20, 150)">
+          <rect x="0" y="0" width="440" height="60" fill="#F9FAFB" stroke="#111827" stroke-width="1"/>
+          <text x="20" y="26" class="wf-caption">EMAIL ADDRESS</text>
+          <text x="20" y="46" class="wf-h3">yusufalias15@gmail.com</text>
+        </g>
+
+        <!-- Location Box -->
+        <g transform="translate(20, 225)">
+          <rect x="0" y="0" width="440" height="60" fill="#F9FAFB" stroke="#111827" stroke-width="1"/>
+          <text x="20" y="26" class="wf-caption">LOCATION</text>
+          <text x="20" y="46" class="wf-h3">Kuala Terengganu, Malaysia</text>
+        </g>
+
+        <!-- Quick Social Buttons -->
+        <g transform="translate(20, 310)">
+          <text x="0" y="14" class="wf-caption">// QUICK PROFILE BUTTONS</text>
+          <g transform="translate(0, 26)">
+            <rect x="0" y="0" width="100" height="26" fill="#FFFFFF" stroke="#111827" stroke-width="1"/>
+            <text x="50" y="17" font-size="9" font-weight="700" text-anchor="middle">GitHub</text>
+
+            <rect x="110" y="0" width="100" height="26" fill="#FFFFFF" stroke="#111827" stroke-width="1"/>
+            <text x="160" y="17" font-size="9" font-weight="700" text-anchor="middle">X</text>
+
+            <rect x="220" y="0" width="105" height="26" fill="#FFFFFF" stroke="#111827" stroke-width="1"/>
+            <text x="272" y="17" font-size="9" font-weight="700" text-anchor="middle">Instagram</text>
+
+            <rect x="335" y="0" width="105" height="26" fill="#FFFFFF" stroke="#111827" stroke-width="1"/>
+            <text x="387" y="17" font-size="9" font-weight="700" text-anchor="middle">Facebook</text>
+          </g>
+        </g>
+      </g>
+
+      <!-- Right Column: Form -->
+      <g id="message-form" transform="translate(545, 20)">
+        <rect x="0" y="0" width="540" height="400" fill="#FFFFFF" stroke="#111827" stroke-width="1.2"/>
+        <text x="25" y="28" class="wf-label">// INTERACTIVE DISPATCHER</text>
+        <text x="25" y="50" class="wf-h2">Send a WhatsApp Message</text>
+        <text x="25" y="68" class="wf-body">Dispatches direct chat to +6012-806-5383.</text>
+
+        <!-- Form Field: Name -->
+        <g transform="translate(25, 85)">
+          <text x="0" y="12" class="wf-caption">YOUR NAME</text>
+          <rect x="0" y="20" width="490" height="34" fill="#F9FAFB" stroke="#111827" stroke-width="1"/>
+          <text x="12" y="42" class="wf-caption">[e.g. Abdullah Adam]</text>
+        </g>
+
+        <!-- Form Field: Subject -->
+        <g transform="translate(25, 155)">
+          <text x="0" y="12" class="wf-caption">SUBJECT</text>
+          <rect x="0" y="20" width="490" height="34" fill="#F9FAFB" stroke="#111827" stroke-width="1"/>
+          <text x="12" y="42" class="wf-caption">[Inquiry / Project Collaboration]</text>
+        </g>
+
+        <!-- Form Field: Message -->
+        <g transform="translate(25, 225)">
+          <text x="0" y="12" class="wf-caption">MESSAGE BODY</text>
+          <rect x="0" y="20" width="490" height="75" fill="#F9FAFB" stroke="#111827" stroke-width="1"/>
+          <text x="12" y="42" class="wf-caption">[Hi Yusuf, I would like to discuss...]</text>
+        </g>
+
+        <!-- Button -->
+        <g transform="translate(25, 335)">
+          <rect x="0" y="0" width="490" height="38" fill="#111827" stroke="#111827" stroke-width="1"/>
+          <text x="245" y="24" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">Send Message via WhatsApp &#8594;</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- [SOCIAL FOOTPRINT CARDS] -->
+    <g id="social-channels" transform="translate(0, 620)">
+      <line x1="0" y1="0" x2="1120" y2="0" stroke="#111827" stroke-width="1"/>
+
+      <g transform="translate(35, 20)">
+        <text x="0" y="0" class="wf-label">// PROFILES &amp; COMMUNITIES</text>
+        <text x="0" y="22" class="wf-h2">Verified Online Channels</text>
+      </g>
+
+      <g transform="translate(35, 55)">
+        <rect x="0" y="0" width="240" height="95" fill="#FFFFFF" stroke="#111827" stroke-width="1"/>
+        <text x="16" y="25" class="wf-h3">GitHub Profile</text>
+        <text x="16" y="42" class="wf-caption">@tinyLUPPA</text>
+        <text x="16" y="75" font-size="9" font-weight="700">[Open GitHub &#8594;]</text>
+
+        <g transform="translate(265, 0)">
+          <rect x="0" y="0" width="240" height="95" fill="#FFFFFF" stroke="#111827" stroke-width="1"/>
+          <text x="16" y="25" class="wf-h3">X (Twitter)</text>
+          <text x="16" y="42" class="wf-caption">@tinyLUPPA_</text>
+          <text x="16" y="75" font-size="9" font-weight="700">[Open X Feed &#8594;]</text>
+        </g>
+
+        <g transform="translate(530, 0)">
+          <rect x="0" y="0" width="240" height="95" fill="#FFFFFF" stroke="#111827" stroke-width="1"/>
+          <text x="16" y="25" class="wf-h3">Instagram</text>
+          <text x="16" y="42" class="wf-caption">@tinyluppa</text>
+          <text x="16" y="75" font-size="9" font-weight="700">[Open Instagram &#8594;]</text>
+        </g>
+
+        <g transform="translate(795, 0)">
+          <rect x="0" y="0" width="255" height="95" fill="#FFFFFF" stroke="#111827" stroke-width="1"/>
+          <text x="16" y="25" class="wf-h3">Facebook</text>
+          <text x="16" y="42" class="wf-caption">Yusuf Alias</text>
+          <text x="16" y="75" font-size="9" font-weight="700">[Open Facebook &#8594;]</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- [FOOTER - RUBRIC REQUIREMENT 12] -->
+    <g id="footer" transform="translate(0, 800)">
+      <rect x="0" y="0" width="1120" height="65" fill="#F9FAFB" stroke="#111827" stroke-width="1.5"/>
+      
+      <!-- Exact Rubric Text -->
+      <text x="35" y="37" font-size="11" font-weight="700" fill="#111827">Yusuf_24B10I007&#169;Copyright.2026</text>
+      
+      <!-- Social Media Text Links -->
+      <g transform="translate(420, 24)">
+        <text x="0" y="15" font-size="10" fill="#374151">[GitHub]</text>
+        <text x="65" y="15" font-size="10" fill="#374151">[X / Twitter]</text>
+        <text x="150" y="15" font-size="10" fill="#374151">[Instagram]</text>
+        <text x="235" y="15" font-size="10" fill="#374151">[Facebook]</text>
+      </g>
+      
+      <!-- Back to Top Button -->
+      <g transform="translate(970, 18)">
+        <rect x="0" y="0" width="115" height="28" rx="2" fill="#FFFFFF" stroke="#111827" stroke-width="1.2"/>
+        <text x="57" y="18" font-size="10" font-weight="600" fill="#111827" text-anchor="middle">Back to Top &#8593;</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,279 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1130" width="1200" height="1130">
+  <defs>
+    <pattern id="wf-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#F1F5F9" stroke-width="0.8" />
+    </pattern>
+  </defs>
+
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .wf-h1 { font-size: 24px; font-weight: 700; fill: #111827; }
+    .wf-h2 { font-size: 18px; font-weight: 700; fill: #111827; }
+    .wf-h3 { font-size: 14px; font-weight: 700; fill: #111827; }
+    .wf-body { font-size: 11px; fill: #374151; line-height: 1.5; }
+    .wf-caption { font-size: 10px; fill: #6B7280; font-family: monospace; }
+    .wf-label { font-size: 9px; font-weight: 700; fill: #111827; letter-spacing: 0.5px; text-transform: uppercase; }
+    .box-border { stroke: #111827; stroke-width: 1.5; fill: #FFFFFF; }
+    .box-subtle { stroke: #D1D5DB; stroke-width: 1; fill: #F9FAFB; }
+    .img-x { stroke: #D1D5DB; stroke-width: 1; }
+    .text-line { stroke: #9CA3AF; stroke-width: 4; stroke-linecap: round; }
+    .text-line-thin { stroke: #9CA3AF; stroke-width: 2.5; stroke-linecap: round; }
+  </style>
+
+  <!-- Clean Canvas Background -->
+  <rect width="1200" height="1130" fill="#FFFFFF"/>
+  <rect width="1200" height="1130" fill="url(#wf-grid)"/>
+
+  <!-- Top Metadata Bar (Assignment & Sheet Details) -->
+  <g id="sheet-header">
+    <rect x="0" y="0" width="1200" height="60" fill="#FFFFFF" stroke="#111827" stroke-width="1.5"/>
+    
+    <!-- Left Sheet Title -->
+    <text x="32" y="25" class="wf-label" fill="#374151">TRADITIONAL WIREFRAME // SHEET 06 OF 07</text>
+    <text x="32" y="46" font-size="16" font-weight="700" fill="#111827">INTERESTS &amp;amp; FAVORITE LINKS <tspan font-weight="400" fill="#6B7280">(interests.html)</tspan></text>
+
+    <!-- Center Assignment Info -->
+    <rect x="440" y="14" width="320" height="32" rx="3" fill="#F9FAFB" stroke="#D1D5DB" stroke-width="1"/>
+    <text x="600" y="34" font-size="11" font-weight="700" fill="#111827" text-anchor="middle">BCS 3584 &#8226; WEB APPLICATION DEVELOPMENT</text>
+
+    <!-- Right Student Meta -->
+    <text x="1168" y="25" font-size="11" fill="#374151" text-anchor="end">STUDENT: <tspan font-weight="700" fill="#111827">Muhammad Yusuf Bin Alias</tspan></text>
+    <text x="1168" y="46" font-size="11" fill="#374151" text-anchor="end">MATRIC: <tspan font-weight="700" fill="#111827">Yusuf_24B10I007</tspan> | DESKTOP 1120px</text>
+  </g>
+
+  <!-- Browser Window Frame Simulation -->
+  <g id="browser-window" transform="translate(40, 75)">
+    <!-- Browser Titlebar -->
+    <rect x="0" y="0" width="1120" height="36" rx="4" fill="#F9FAFB" stroke="#111827" stroke-width="1.5"/>
+    <circle cx="18" cy="18" r="4.5" fill="none" stroke="#111827" stroke-width="1.2"/>
+    <circle cx="32" cy="18" r="4.5" fill="none" stroke="#111827" stroke-width="1.2"/>
+    <circle cx="46" cy="18" r="4.5" fill="none" stroke="#111827" stroke-width="1.2"/>
+
+    <!-- URL Bar -->
+    <rect x="70" y="6" width="600" height="24" rx="2" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+    <text x="82" y="22" font-size="11" fill="#374151" font-family="monospace">https://yusuf.dev/interests.html</text>
+
+    <!-- Scale Indicator -->
+    <text x="1105" y="22" class="wf-caption" text-anchor="end">1120 &#215; 1000px</text>
+  </g>
+
+  <!-- Page Canvas Body -->
+  <g id="wireframe-content" transform="translate(40, 111)">
+    <rect x="0" y="0" width="1120" height="1000" fill="#FFFFFF" stroke="#111827" stroke-width="1.5"/>
+    
+    <!-- [HEADER / NAVBAR] -->
+    <g id="nav-header" transform="translate(0, 0)">
+      <rect x="0" y="0" width="1120" height="54" fill="#FFFFFF" stroke="#111827" stroke-width="1.5"/>
+      
+      <!-- Brand Logo Box -->
+      <rect x="30" y="12" width="120" height="30" fill="#F9FAFB" stroke="#111827" stroke-width="1.2"/>
+      <text x="90" y="31" font-size="12" font-weight="700" fill="#111827" text-anchor="middle">&lt;YUSUF.DEV/&gt;</text>
+      
+      <!-- Nav Items -->
+      <g transform="translate(420, 14)">
+        <g transform="translate(0, 0)">
+          <text x="0" y="17" font-size="11" font-weight="400" fill="#111827">Home /&gt;</text>
+        </g>
+        <g transform="translate(86, 0)">
+          <text x="0" y="17" font-size="11" font-weight="400" fill="#111827">About /&gt;</text>
+        </g>
+        <g transform="translate(172, 0)">
+          <text x="0" y="17" font-size="11" font-weight="400" fill="#111827">Awards /&gt;</text>
+        </g>
+        <g transform="translate(258, 0)">
+          <text x="0" y="17" font-size="11" font-weight="400" fill="#111827">Experience /&gt;</text>
+        </g>
+        <g transform="translate(344, 0)">
+          <text x="0" y="17" font-size="11" font-weight="400" fill="#111827">Tech /&gt;</text>
+        </g>
+        <g transform="translate(430, 0)">
+          <text x="0" y="17" font-size="11" font-weight="700" fill="#111827">Interests /&gt;</text>
+          <line x1="0" y1="24" x2="55" y2="24" stroke="#111827" stroke-width="2"/>
+        </g>
+        <g transform="translate(516, 0)">
+          <rect x="0" y="0" width="95" height="26" rx="3" fill="#FFFFFF" stroke="#111827" stroke-width="1.5"/>
+          <text x="47" y="17" font-size="11" font-weight="700" fill="#111827" text-anchor="middle">Contact /&gt;</text>
+        </g>
+      </g>
+    </g>
+    <!-- [PAGE HEADER BANNER] -->
+    <g id="page-banner" transform="translate(0, 54)">
+      <rect x="0" y="0" width="1120" height="115" fill="#F9FAFB" stroke="#111827" stroke-width="1"/>
+      
+      <!-- Breadcrumb -->
+      <text x="35" y="28" class="wf-caption">Home / Interests &amp;amp; Favorite Links</text>
+      
+      <!-- Title & Subtitle -->
+      <text x="35" y="55" class="wf-h1">My Interests &amp;amp; Favorite Links</text>
+      <text x="35" y="74" class="wf-body">Personal passions, cybersecurity hobbies, CTF practice, and 5+ favorite web links.</text>
+      
+      <!-- Internal In-page Jump Anchor Bar -->
+      <g transform="translate(35, 86)">
+        <text x="0" y="14" class="wf-label">SECTIONS:</text>
+        <rect x="70" y="0" width="132" height="20" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+        <text x="136" y="14" font-size="9" fill="#374151" text-anchor="middle"># hobbies-overview</text>
+        <rect x="210" y="0" width="118" height="20" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+        <text x="269" y="14" font-size="9" fill="#374151" text-anchor="middle"># favorite-links</text>
+        <rect x="336" y="0" width="132" height="20" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+        <text x="402" y="14" font-size="9" fill="#374151" text-anchor="middle"># social-footprint</text>
+      </g>
+    </g>
+    <!-- [HOBBIES & ACTIVITIES SECTION] -->
+    <g id="hobbies-overview" transform="translate(0, 185)">
+      <g transform="translate(35, 20)">
+        <text x="0" y="0" class="wf-label">// PERSONAL PURSUITS</text>
+        <text x="0" y="22" class="wf-h2">Hobbies &amp; Personal Interests</text>
+      </g>
+
+      <g transform="translate(35, 55)">
+        <!-- Hobby 1 -->
+        <rect x="0" y="0" width="330" height="170" fill="#FFFFFF" stroke="#111827" stroke-width="1.2"/>
+        <text x="20" y="30" class="wf-h3">CTF &amp; Ethical Hacking Labs</text>
+        <g transform="translate(20, 52)">
+          <line x1="0" y1="0" x2="280" y2="0" class="text-line-thin"/>
+          <line x1="0" y1="12" x2="260" y2="12" class="text-line-thin"/>
+          <line x1="0" y1="24" x2="240" y2="24" class="text-line-thin"/>
+        </g>
+        <text x="20" y="130" class="wf-caption">Labs: Hack The Box &amp; OverTheWire</text>
+
+        <!-- Hobby 2 -->
+        <g transform="translate(360, 0)">
+          <rect x="0" y="0" width="330" height="170" fill="#FFFFFF" stroke="#111827" stroke-width="1.2"/>
+          <text x="20" y="30" class="wf-h3">OSINT &amp; Fraud Investigation</text>
+          <g transform="translate(20, 52)">
+            <line x1="0" y1="0" x2="280" y2="0" class="text-line-thin"/>
+            <line x1="0" y1="12" x2="260" y2="12" class="text-line-thin"/>
+            <line x1="0" y1="24" x2="220" y2="24" class="text-line-thin"/>
+          </g>
+          <text x="20" y="130" class="wf-caption">Focus: Anti-Scam Domain Footprinting</text>
+        </g>
+
+        <!-- Hobby 3 -->
+        <g transform="translate(720, 0)">
+          <rect x="0" y="0" width="330" height="170" fill="#FFFFFF" stroke="#111827" stroke-width="1.2"/>
+          <text x="20" y="30" class="wf-h3">Creative Digital Design</text>
+          <g transform="translate(20, 52)">
+            <line x1="0" y1="0" x2="280" y2="0" class="text-line-thin"/>
+            <line x1="0" y1="12" x2="260" y2="12" class="text-line-thin"/>
+            <line x1="0" y1="24" x2="250" y2="24" class="text-line-thin"/>
+          </g>
+          <text x="20" y="130" class="wf-caption">Focus: High-Contrast Vector Graphics</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- [FAVORITE WEB LINKS - REQ 9: 5 EXTERNAL LINKS] -->
+    <g id="favorite-links" transform="translate(0, 440)">
+      <line x1="0" y1="0" x2="1120" y2="0" stroke="#111827" stroke-width="1"/>
+
+      <g transform="translate(35, 20)">
+        <text x="0" y="0" class="wf-label">// CURATED RESOURCES (REQ #9: 4+ EXTERNAL LINKS)</text>
+        <text x="0" y="22" class="wf-h2">My Favorite Web Links (5 Curated Portals)</text>
+      </g>
+
+      <g transform="translate(35, 55)">
+        <!-- Link 1 -->
+        <rect x="0" y="0" width="510" height="80" fill="#F9FAFB" stroke="#111827" stroke-width="1.2"/>
+        <text x="16" y="22" class="wf-caption">PENETRATION LAB</text>
+        <text x="16" y="40" class="wf-h3">Hack The Box (HTB) Training Arena</text>
+        <text x="16" y="62" font-size="10" font-weight="700">[EXT LINK] Visit Hack The Box &#8594; (https://www.hackthebox.com)</text>
+
+        <!-- Link 2 -->
+        <g transform="translate(540, 0)">
+          <rect x="0" y="0" width="510" height="80" fill="#F9FAFB" stroke="#111827" stroke-width="1.2"/>
+          <text x="16" y="22" class="wf-caption">SECURITY JOURNALISM</text>
+          <text x="16" y="40" class="wf-h3">Krebs on Security Investigations</text>
+          <text x="16" y="62" font-size="10" font-weight="700">[EXT LINK] Read Krebs on Security &#8594; (https://krebsonsecurity.com)</text>
+        </g>
+
+        <!-- Link 3 -->
+        <g transform="translate(0, 95)">
+          <rect x="0" y="0" width="510" height="80" fill="#F9FAFB" stroke="#111827" stroke-width="1.2"/>
+          <text x="16" y="22" class="wf-caption">SECURITY WARGAMES</text>
+          <text x="16" y="40" class="wf-h3">OverTheWire Security Community</text>
+          <text x="16" y="62" font-size="10" font-weight="700">[EXT LINK] Play OverTheWire &#8594; (https://overthewire.org)</text>
+        </g>
+
+        <!-- Link 4 -->
+        <g transform="translate(540, 95)">
+          <rect x="0" y="0" width="510" height="80" fill="#F9FAFB" stroke="#111827" stroke-width="1.2"/>
+          <text x="16" y="22" class="wf-caption">DESIGN PORTFOLIOS</text>
+          <text x="16" y="40" class="wf-h3">Behance Creative Network</text>
+          <text x="16" y="62" font-size="10" font-weight="700">[EXT LINK] Explore Behance &#8594; (https://www.behance.net)</text>
+        </g>
+
+        <!-- Link 5 -->
+        <g transform="translate(0, 190)">
+          <rect x="0" y="0" width="1050" height="75" fill="#F9FAFB" stroke="#111827" stroke-width="1.2"/>
+          <text x="16" y="22" class="wf-caption">VULNERABILITY PLATFORM</text>
+          <text x="16" y="40" class="wf-h3">HackerOne Bug Bounty Program</text>
+          <text x="16" y="60" font-size="10" font-weight="700">[EXT LINK] Explore HackerOne &#8594; (https://www.hackerone.com)</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- [ONLINE CHANNELS - 4 SOCIAL CARDS] -->
+    <g id="social-footprint" transform="translate(0, 755)">
+      <line x1="0" y1="0" x2="1120" y2="0" stroke="#111827" stroke-width="1"/>
+
+      <g transform="translate(35, 20)">
+        <text x="0" y="0" class="wf-label">// DEVELOPER FOOTPRINT</text>
+        <text x="0" y="22" class="wf-h2">Online Developer Footprint &amp; Social Channels</text>
+      </g>
+
+      <g transform="translate(35, 55)">
+        <rect x="0" y="0" width="240" height="100" fill="#FFFFFF" stroke="#111827" stroke-width="1"/>
+        <text x="15" y="25" class="wf-h3">GitHub</text>
+        <text x="15" y="42" class="wf-caption">@tinyLUPPA</text>
+        <text x="15" y="60" class="wf-body">Where software builds live.</text>
+        <text x="15" y="82" font-size="9" font-weight="700">[View Repos &#8594;]</text>
+
+        <g transform="translate(265, 0)">
+          <rect x="0" y="0" width="240" height="100" fill="#FFFFFF" stroke="#111827" stroke-width="1"/>
+          <text x="15" y="25" class="wf-h3">X (Twitter)</text>
+          <text x="15" y="42" class="wf-caption">@tinyLUPPA_</text>
+          <text x="15" y="60" class="wf-body">Tech insights &amp; discourse.</text>
+          <text x="15" y="82" font-size="9" font-weight="700">[Follow on X &#8594;]</text>
+        </g>
+
+        <g transform="translate(530, 0)">
+          <rect x="0" y="0" width="240" height="100" fill="#FFFFFF" stroke="#111827" stroke-width="1"/>
+          <text x="15" y="25" class="wf-h3">Instagram</text>
+          <text x="15" y="42" class="wf-caption">@tinyluppa</text>
+          <text x="15" y="60" class="wf-body">Visual media &amp; student life.</text>
+          <text x="15" y="82" font-size="9" font-weight="700">[View Profile &#8594;]</text>
+        </g>
+
+        <g transform="translate(795, 0)">
+          <rect x="0" y="0" width="255" height="100" fill="#FFFFFF" stroke="#111827" stroke-width="1"/>
+          <text x="15" y="25" class="wf-h3">Facebook</text>
+          <text x="15" y="42" class="wf-caption">Yusuf Alias</text>
+          <text x="15" y="60" class="wf-body">Academic network.</text>
+          <text x="15" y="82" font-size="9" font-weight="700">[Connect on Facebook &#8594;]</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- [FOOTER - RUBRIC REQUIREMENT 12] -->
+    <g id="footer" transform="translate(0, 950)">
+      <rect x="0" y="0" width="1120" height="65" fill="#F9FAFB" stroke="#111827" stroke-width="1.5"/>
+      
+      <!-- Exact Rubric Text -->
+      <text x="35" y="37" font-size="11" font-weight="700" fill="#111827">Yusuf_24B10I007&#169;Copyright.2026</text>
+      
+      <!-- Social Media Text Links -->
+      <g transform="translate(420, 24)">
+        <text x="0" y="15" font-size="10" fill="#374151">[GitHub]</text>
+        <text x="65" y="15" font-size="10" fill="#374151">[X / Twitter]</text>
+        <text x="150" y="15" font-size="10" fill="#374151">[Instagram]</text>
+        <text x="235" y="15" font-size="10" fill="#374151">[Facebook]</text>
+      </g>
+      
+      <!-- Back to Top Button -->
+      <g transform="translate(970, 18)">
+        <rect x="0" y="0" width="115" height="28" rx="2" fill="#FFFFFF" stroke="#111827" stroke-width="1.2"/>
+        <text x="57" y="18" font-size="10" font-weight="600" fill="#111827" text-anchor="middle">Back to Top &#8593;</text>
+      </g>
+    </g>
+  </g>
+</svg>

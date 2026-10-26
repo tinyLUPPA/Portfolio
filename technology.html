@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title strictly fulfills Assignment Requirement 10 -->
+  <title>Professional Interests &amp; Technology | Muhammad Yusuf Bin Alias</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body id="top">
+
+  <!-- Ambient Glow -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-bracket">&lt;</span>YUSUF<span class="logo-accent">.DEV</span><span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Pure CSS Mobile Menu Toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span class="hamburger"></span>
+      </label>
+
+      <nav class="nav-links">
+        <a href="index.html">Home <span class="nav-tag">/&gt;</span></a>
+        <a href="about.html">About <span class="nav-tag">/&gt;</span></a>
+        <a href="awards.html">Awards <span class="nav-tag">/&gt;</span></a>
+        <a href="experience.html">Experience <span class="nav-tag">/&gt;</span></a>
+        <a href="technology.html" class="active">Tech <span class="nav-tag">/&gt;</span></a>
+        <a href="interests.html">Interests <span class="nav-tag">/&gt;</span></a>
+        <a href="contact.html" class="btn-nav">Contact <span class="nav-tag" >/&gt;</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header Banner -->
+  <section class="page-header-section">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <span>Professional Interests &amp; Technology</span>
+      </nav>
+      <h1 class="page-banner-title">
+        Professional Interests &amp; <span class="text-gradient">Technology</span>
+      </h1>
+      <p class="page-banner-desc">
+        Key technological focus areas in modern enterprise cybersecurity, distributed systems architecture, cloud defense, and curated industry links.
+      </p>
+
+      <!-- Internal In-page Hyperlink with Anchor Text (Requirement 4.v) -->
+      <nav class="page-nav-bar" aria-label="Page Sections">
+        <span class="nav-bar-label">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+          Sections
+        </span>
+        <a href="#tech-domains" class="nav-pill-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          Specialized Domains
+        </a>
+        <a href="#tech-links" class="nav-pill-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          Standards &amp; Portals
+        </a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Professional Technology Domains (Requirement 10) -->
+  <section id="tech-domains" class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// SPECIALIZED FIELDS</span>
+        <h2 class="section-title">Technological Focus Areas</h2>
+        <p class="section-subtitle">The foundational technologies and emerging paradigms I believe will define future enterprise resilience.</p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Area 1 -->
+        <div class="glass-panel">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 style="font-size:1.2rem; margin-bottom:0.5rem; color:#fff;">Zero Trust Architecture (ZTA)</h3>
+          <p style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:1rem;">
+            Moving beyond traditional perimeter defense toward continuous mutual authentication, least-privilege microsegmentation, and dynamic identity validation.
+          </p>
+          <ul style="padding-left:1.25rem; color:var(--text-muted); font-size:0.85rem; line-height:1.6;">
+            <li>NIST SP 800-207 guidelines &amp; implementation</li>
+            <li>Software-Defined Perimeter (SDP) models</li>
+            <li>Continuous telemetry &amp; device verification</li>
+          </ul>
+        </div>
+
+        <!-- Area 2 -->
+        <div class="glass-panel">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          </div>
+          <h3 style="font-size:1.2rem; margin-bottom:0.5rem; color:#fff;">Cloud Security &amp; DevSecOps</h3>
+          <p style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:1rem;">
+            Embedding automated security scanning, container image signing, and infrastructure-as-code (IaC) linting directly into continuous deployment pipelines.
+          </p>
+          <ul style="padding-left:1.25rem; color:var(--text-muted); font-size:0.85rem; line-height:1.6;">
+            <li>Static Application Security Testing (SAST)</li>
+            <li>Kubernetes &amp; container runtime protection</li>
+            <li>Secrets management &amp; key rotation</li>
+          </ul>
+        </div>
+
+        <!-- Area 3 -->
+        <div class="glass-panel">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+          </div>
+          <h3 style="font-size:1.2rem; margin-bottom:0.5rem; color:#fff;">AI-Powered Threat Telemetry</h3>
+          <p style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:1rem;">
+            Leveraging neural network classification models to parse high-velocity SIEM logs, identify malicious zero-day beaconing, and automate incident isolation.
+          </p>
+          <ul style="padding-left:1.25rem; color:var(--text-muted); font-size:0.85rem; line-height:1.6;">
+            <li>Anomaly detection in network traffic</li>
+            <li>Automated threat hunting &amp; intelligence sharing</li>
+            <li>Heuristic malware classification</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Technological Links (Strictly fulfills Requirement 10 with 4+ links) -->
+  <section id="tech-links" class="section bg-tint">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// PROFESSIONAL LINKS</span>
+        <h2 class="section-title">Essential Technological Resources</h2>
+        <p class="section-subtitle">Authoritative engineering portals and standards organizations shaping cybersecurity and modern web engineering.</p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="skills-grid">
+        <!-- External Link 1 -->
+        <div class="glass-panel external-link-card">
+          <div>
+            <span class="link-tag">WEB SECURITY STANDARD</span>
+            <h3 style="font-size:1.15rem; color:#fff; margin-bottom:0.5rem;">OWASP Foundation</h3>
+            <p style="color:var(--text-muted); font-size:0.88rem; line-height:1.6;">
+              Open Web Application Security Project (OWASP) is the definitive global standard for software security, producing the industry-standard OWASP Top 10 vulnerabilities.
+            </p>
+          </div>
+          <!-- Requirement 4.vi: External hyperlink with anchor text -->
+          <a href="https://owasp.org" target="_blank" rel="noopener noreferrer" class="ext-btn">
+            Explore OWASP Application Security Foundation &rarr;
+          </a>
+        </div>
+
+        <!-- External Link 2 -->
+        <div class="glass-panel external-link-card">
+          <div>
+            <span class="link-tag">FEDERAL SECURITY FRAMEWORK</span>
+            <h3 style="font-size:1.15rem; color:#fff; margin-bottom:0.5rem;">NIST Cybersecurity Framework (CSF)</h3>
+            <p style="color:var(--text-muted); font-size:0.88rem; line-height:1.6;">
+              National Institute of Standards and Technology guidance providing rigorous taxonomy, standards, and best practices to manage cybersecurity-related risks.
+            </p>
+          </div>
+          <a href="https://www.nist.gov/cyberframework" target="_blank" rel="noopener noreferrer" class="ext-btn">
+            View NIST Cybersecurity Framework &rarr;
+          </a>
+        </div>
+
+        <!-- External Link 3 -->
+        <div class="glass-panel external-link-card">
+          <div>
+            <span class="link-tag">INTERNET ARCHITECTURE &amp; PERFORMANCE</span>
+            <h3 style="font-size:1.15rem; color:#fff; margin-bottom:0.5rem;">Cloudflare Learning Center</h3>
+            <p style="color:var(--text-muted); font-size:0.88rem; line-height:1.6;">
+              An educational library breaking down how the internet works, DNSSEC, DDoS mitigation, TLS encryption, and edge computing architectures.
+            </p>
+          </div>
+          <a href="https://www.cloudflare.com/learning/" target="_blank" rel="noopener noreferrer" class="ext-btn">
+            Visit Cloudflare Internet Learning Center &rarr;
+          </a>
+        </div>
+
+        <!-- External Link 4 -->
+        <div class="glass-panel external-link-card">
+          <div>
+            <span class="link-tag">EMERGING COMPUTING RESEARCH</span>
+            <h3 style="font-size:1.15rem; color:#fff; margin-bottom:0.5rem;">MIT Technology Review</h3>
+            <p style="color:var(--text-muted); font-size:0.88rem; line-height:1.6;">
+              In-depth technical analysis and journalism on breakthrough technologies, artificial intelligence advancements, and quantum computing implications.
+            </p>
+          </div>
+          <a href="https://www.technologyreview.com" target="_blank" rel="noopener noreferrer" class="ext-btn">
+            Read MIT Technology Review Publications &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer with Exact Requirement 12 Format -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>Yusuf_24B10I007©Copyright.2026</p>
+      <div class="footer-social-links">
+        <a href="https://github.com/tinyLUPPA" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://x.com/tinyLUPPA_" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
+        <a href="https://www.instagram.com/tinyluppa" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/share/1FAkYouaUz/" target="_blank" rel="noopener noreferrer">Facebook</a>
+      </div>
+      <div class="footer-links">
+        <a href="#top" class="jump-link">Back to Top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Yasio.dev Trailing Mouse Cursor Script -->
+  <script src="cursor.js"></script>
+</body>
+</html>

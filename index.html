@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title strictly fulfills Assignment Requirement 7 -->
+  <title>Home Page of Muhammad Yusuf Bin Alias</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body id="top">
+
+  <!-- Ambient Glow Elements -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+
+  <!-- Navigation Bar (6 Pages for Requirement 2) -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-bracket">&lt;</span>YUSUF<span class="logo-accent">.DEV</span><span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Pure CSS Mobile Menu Toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span class="hamburger"></span>
+      </label>
+
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home <span class="nav-tag">/&gt;</span></a>
+        <a href="about.html">About <span class="nav-tag">/&gt;</span></a>
+        <a href="awards.html">Awards <span class="nav-tag">/&gt;</span></a>
+        <a href="experience.html">Experience <span class="nav-tag">/&gt;</span></a>
+        <a href="technology.html">Tech <span class="nav-tag">/&gt;</span></a>
+        <a href="interests.html">Interests <span class="nav-tag">/&gt;</span></a>
+        <a href="contact.html" class="btn-nav">Contact <span class="nav-tag">/&gt;</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="status-badge">
+          <span class="pulse-dot"></span>
+          <span>Open to Cybersecurity Opportunities & Collaborations</span>
+        </div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="text-gradient">Muhammad Yusuf Bin Alias</span><br>
+        </h1>
+        <p class="hero-role">
+          <span class="role-tag">IT Specialist</span>
+          <span class="role-tag">Network Security</span>
+          <span class="role-tag">UCTATI Scholar</span>
+        </p>
+        <p class="hero-desc">
+          A motivated and dedicated student at University College TATI with a strong passion for learning and mastering emerging technologies. Committed to understanding complex systems, staying updated with the latest trends in the tech industry, and continuously improving technical and problem-solving skills.
+        </p>
+
+        <div class="hero-actions">
+          <a href="about.html" class="btn btn-primary">
+            Explore About Me
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+        </div>
+        
+        <!-- Key Highlights Bar (Anchor Target) -->
+        <div id="quick-stats" class="hero-stats">
+          <div class="stat-card">
+            <span class="stat-num">3.92</span>
+            <span class="stat-label">Bachelor CGPA (UCTATI)</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">2nd</span>
+            <span class="stat-label">Global Network Challenge</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">5th</span>
+            <span class="stat-label">Japan Tech Innovation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Profile Card (Includes Graphics 1 and 2 for Requirement 6) -->
+      <div class="hero-visual">
+        <div class="glass-profile-card tilt-card">
+          <div class="profile-header">
+            <!-- Real Profile Portrait (Requirement 6: images and graphics) -->
+            <div class="profile-avatar">
+              <div class="avatar-ring">
+                <img src="profile.jpg" alt="Muhammad Yusuf Bin Alias" class="avatar-photo">
+              </div>
+            </div>
+            <div class="profile-meta">
+              <h3>Muhammad Yusuf</h3>
+              <p class="profile-sub">BIBM (HONOURS) • UCTATI</p>
+              <span class="verified-pill">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Malaysia Representative
+              </span>
+            </div>
+          </div>
+
+          <!-- Graphic 2: Interactive Cyber Defense Matrix Illustration (Requirement 6) -->
+          <div style="background: rgba(3, 7, 18, 0.6); border: 1px solid rgba(56, 189, 248, 0.2); border-radius: 8px; padding: 12px; margin-bottom: 1.25rem; text-align: center;">
+            <svg width="100%" height="90" viewBox="0 0 320 90" fill="none" style="display:block; margin:0 auto;">
+              <rect x="10" y="15" width="60" height="40" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+              <text x="40" y="38" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="middle">UCTATI</text>
+              
+              <line x1="70" y1="35" x2="130" y2="35" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4" class="animated-dash"/>
+              
+              <circle cx="160" cy="35" r="22" fill="#0f172a" stroke="#818cf8" stroke-width="2"/>
+              <text x="160" y="39" fill="#818cf8" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">DEFENSE</text>
+              
+              <line x1="190" y1="35" x2="250" y2="35" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4" class="animated-dash"/>
+              
+              <rect x="250" y="15" width="60" height="40" rx="6" fill="#0f172a" stroke="#34d399" stroke-width="2"/>
+              <text x="280" y="38" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="middle">GLOBAL</text>
+              <text x="160" y="78" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="middle">// Network Node Architecture &amp; CTF Vector</text>
+            </svg>
+          </div>
+
+          <div class="terminal-box">
+            <div class="terminal-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="terminal-title">yusuf_student.json</span>
+            </div>
+            <pre class="terminal-code"><code>{
+  <span class="json-key">"student"</span>: <span class="json-str">"Muhammad Yusuf Bin Alias"</span>,
+  <span class="json-key">"course"</span>: <span class="json-str">"Web App &amp; Dev (BCS 3584)"</span>,
+  <span class="json-key">"university"</span>: <span class="json-str">"University College TATI"</span>,
+  <span class="json-key">"achievement"</span>: <span class="json-str">"2nd Place Worldwide @ NetHack28"</span>
+}<span class="terminal-caret">▋</span></code></pre>
+          </div>
+
+          <div class="quick-contact-pills">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yusufalias15@gmail.com&su=Portfolio+Inquiry+-+Muhammad+Yusuf" target="_blank" rel="noopener noreferrer" class="contact-pill" title="Click to open Gmail composer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              yusufalias15@gmail.com
+            </a>
+            <a href="https://wa.me/60128065383" target="_blank" rel="noopener noreferrer" class="contact-pill">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" style="color:#25D366;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              WhatsApp (+6012-806-5383)
+            </a>
+          </div>
+
+          <div class="social-links-bar" style="border-top:none; padding-top:0.4rem; margin-top:0.6rem;">
+            <a href="https://github.com/tinyLUPPA" target="_blank" rel="noopener noreferrer" class="social-pill-btn github" title="GitHub Profile - tinyLUPPA">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://x.com/tinyLUPPA_" target="_blank" rel="noopener noreferrer" class="social-pill-btn twitter" title="X (Twitter) - @tinyLUPPA_">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              <span>X</span>
+            </a>
+            <a href="https://www.instagram.com/tinyluppa" target="_blank" rel="noopener noreferrer" class="social-pill-btn instagram" title="Instagram - @tinyluppa">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+              <span>Instagram</span>
+            </a>
+            <a href="https://www.facebook.com/share/1FAkYouaUz/" target="_blank" rel="noopener noreferrer" class="social-pill-btn facebook" title="Facebook - Yusuf Alias">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              <span>Facebook</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase / Portfolio Navigation Directory (Anchor Target) -->
+  <section id="quick-overview" class="section bg-tint">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// NAVIGATION</span>
+        <h2 class="section-title">Explore Sections</h2>
+        <p class="section-subtitle">Quickly jump to any section of the website.</p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Card 1 -->
+        <a href="about.html" class="glass-panel" style="display:block; text-decoration:none;">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <h3 style="font-size:1.25rem; margin-bottom:0.5rem; color:var(--text-main);">1. About Me</h3>
+          <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:1.25rem;">
+            Educational background at UCTATI, career ambitions, and official links to universities.
+          </p>
+          <span style="color:var(--primary); font-weight:600; font-size:0.88rem;">Open About Page &rarr;</span>
+        </a>
+
+        <!-- Card 2 -->
+        <a href="awards.html" class="glass-panel" style="display:block; text-decoration:none;">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+          </div>
+          <h3 style="font-size:1.25rem; margin-bottom:0.5rem; color:var(--text-main);">2. Awards &amp; Skills</h3>
+          <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:1.25rem;">
+            Global cyber challenge honors, IT innovation accolades, and technical skill matrix.
+          </p>
+          <span style="color:var(--primary); font-weight:600; font-size:0.88rem;">Open Awards Page &rarr;</span>
+        </a>
+
+        <!-- Card 3 -->
+        <a href="experience.html" class="glass-panel" style="display:block; text-decoration:none;">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 style="font-size:1.25rem; margin-bottom:0.5rem; color:var(--text-main);">3. Experience &amp; Competitions</h3>
+          <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:1.25rem;">
+            Network Hacking Challenge, anti-scammer tracking tools, and HTML tabular results.
+          </p>
+          <span style="color:var(--primary); font-weight:600; font-size:0.88rem;">Open Experience Page &rarr;</span>
+        </a>
+
+        <!-- Card 4 -->
+        <a href="technology.html" class="glass-panel" style="display:block; text-decoration:none;">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          </div>
+          <h3 style="font-size:1.25rem; margin-bottom:0.5rem; color:var(--text-main);">4. Tech &amp; Professional</h3>
+          <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:1.25rem;">
+            Professional computing focus, cybersecurity frameworks, and 4+ industry links.
+          </p>
+          <span style="color:var(--primary); font-weight:600; font-size:0.88rem;">Open Tech Page &rarr;</span>
+        </a>
+
+        <!-- Card 5 -->
+        <a href="interests.html" class="glass-panel" style="display:block; text-decoration:none;">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+          </div>
+          <h3 style="font-size:1.25rem; margin-bottom:0.5rem; color:var(--text-main);">5. Interests &amp; Favorite Links</h3>
+          <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:1.25rem;">
+            Personal hobbies, CTF challenges, gaming, and 4+ curated favorite web links.
+          </p>
+          <span style="color:var(--primary); font-weight:600; font-size:0.88rem;">Open Interests Page &rarr;</span>
+        </a>
+
+        <!-- Card 6 -->
+        <a href="contact.html" class="glass-panel" style="display:block; text-decoration:none;">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </div>
+          <h3 style="font-size:1.25rem; margin-bottom:0.5rem; color:var(--text-main);">6. Contact &amp; Inquiries</h3>
+          <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:1.25rem;">
+            Direct phone, email, WhatsApp, and interactive direct message hub.
+          </p>
+          <span style="color:var(--primary); font-weight:600; font-size:0.88rem;">Open Contact Page &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer with Exact Requirement 12 Format -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>Yusuf_24B10I007©Copyright.2026</p>
+      <div class="footer-social-links">
+        <a href="https://github.com/tinyLUPPA" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://x.com/tinyLUPPA_" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
+        <a href="https://www.instagram.com/tinyluppa" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/share/1FAkYouaUz/" target="_blank" rel="noopener noreferrer">Facebook</a>
+      </div>
+      <div class="footer-links">
+        <a href="#top" class="jump-link">Back to Top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Yasio.dev Trailing Mouse Cursor Script -->
+  <script src="cursor.js"></script>
+</body>
+</html>
