@@ -144,17 +144,23 @@ html, body {
   box-shadow: 0 0 14px #ffffff !important;
 }
 
-/* Hide native OS cursor on desktop so the custom reticle is seamless */
-@media (pointer: fine) {
+/* Hide native OS cursor strictly on desktop pointer devices so the custom reticle is seamless */
+@media (pointer: fine) and (min-width: 993px) {
   html, body, a, button, input, textarea, select, .btn, .btn-nav, .nav-pill-link, .jump-link, .nav-toggle-label, label, [role="button"] {
     cursor: none !important;
   }
 }
 
-/* Hide custom cursor on mobile touchscreens */
-@media (pointer: coarse) {
+/* Hide custom cursor completely on mobile touchscreens and viewports <= 992px */
+@media (pointer: coarse), (max-width: 992px) {
   .cursor-dot, .cursor-circle {
     display: none !important;
+  }
+  html, body, a, button, input, textarea, select, .btn, .btn-nav, .nav-pill-link, .jump-link, .nav-toggle-label, label, [role="button"] {
+    cursor: auto !important;
+  }
+  a, button, .btn, .btn-nav, .nav-pill-link, .nav-toggle-label, [role="button"] {
+    cursor: pointer !important;
   }
 }
 
@@ -332,7 +338,7 @@ a {
 }
 
 .section-title {
-  font-size: 3rem; /* Enlarged section title */
+  font-size: clamp(1.6rem, 4vw, 3rem); /* Fluid responsive section title */
   font-weight: 800;
   color: var(--text-main);
   letter-spacing: -0.5px;
@@ -660,11 +666,12 @@ a {
 }
 
 .page-banner-title {
-  font-size: 3.5rem; /* Massive bold page title */
+  font-size: clamp(1.85rem, 5vw, 3.5rem); /* Fluid responsive page title */
   font-weight: 800;
   letter-spacing: -1px;
   margin-bottom: 0.85rem;
   line-height: 1.15;
+  word-break: break-word;
 }
 
 .page-banner-desc {
@@ -738,11 +745,12 @@ a {
 }
 
 .hero-title {
-  font-size: 4.25rem; /* High-impact editorial title */
+  font-size: clamp(2rem, 5.5vw, 4.25rem); /* Fluid high-impact responsive title */
   font-weight: 800;
   line-height: 1.1;
   letter-spacing: -1.5px;
   margin-bottom: 1.5rem;
+  word-break: break-word;
 }
 
 .hero-role {
@@ -1141,10 +1149,10 @@ a {
 }
 
 .quote-text {
-  font-size: 1.32rem; /* Larger prominent statement */
+  font-size: clamp(1.05rem, 2.5vw, 1.32rem); /* Fluid responsive prominent statement */
   font-style: italic;
   color: #f1f5f9;
-  line-height: 1.9;
+  line-height: 1.85;
   position: relative;
   padding-left: 1.5rem;
   border-left: 4px solid var(--primary);
@@ -1907,30 +1915,128 @@ a {
 }
 
 /* -------------------------------------------------------------------
-   Responsive Media Queries
+   Responsive Media Queries (Pixel-Perfect Mobile & Desktop Architecture)
    ------------------------------------------------------------------- */
+
+/* --- 1. Laptops & Small Desktops (<= 1200px) --- */
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 2.25rem;
+  }
+
+  .nav-container {
+    padding: 1.1rem 2.25rem;
+  }
+
+  .hero-grid {
+    gap: 3.5rem;
+  }
+
+  .about-main-layout {
+    grid-template-columns: 380px 1fr;
+    gap: 2.5rem;
+  }
+
+  .pillars-row {
+    gap: 1.5rem;
+  }
+}
+
+/* --- 2. Tablets & Landscape Mode (<= 992px) --- */
 @media (max-width: 992px) {
+  .container {
+    padding: 0 1.75rem;
+  }
+
+  .nav-container {
+    padding: 1rem 1.75rem;
+  }
+
+  .section {
+    padding: 4.5rem 0;
+  }
+
+  .hero-section {
+    padding: 3.5rem 0 4.5rem;
+    min-height: auto;
+  }
+
   .hero-grid {
     grid-template-columns: 1fr;
     gap: 3rem;
+  }
+
+  .hero-visual {
+    max-width: 580px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .about-main-layout {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+  }
+
+  .about-portrait-card {
+    max-width: 440px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .portrait-image-wrapper {
+    height: 400px;
+  }
+
+  .pillars-row {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
   }
 
   .about-grid,
   .education-grid,
   .contact-grid {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .awards-grid,
   .skills-grid,
   .social-showcase-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
 }
 
+/* --- 3. Smartphones & Phablets (<= 768px) --- */
 @media (max-width: 768px) {
+  html {
+    font-size: 16px; /* Normalize rem calculations for mobile displays */
+  }
+
+  body {
+    padding-top: 72px; /* Precision offset for mobile fixed navbar */
+  }
+
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  .nav-container {
+    padding: 0.85rem 1.25rem;
+  }
+
+  .logo {
+    font-size: 1.25rem;
+  }
+
+  /* Mobile Fullscreen Glass Navigation Drawer */
   .nav-toggle-label {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0.6rem;
+    margin-right: -0.35rem;
     z-index: 1001;
   }
 
@@ -1951,21 +2057,25 @@ a {
   .nav-links {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 64px;
     left: 0;
     width: 100%;
+    max-height: calc(100vh - 64px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     background: rgba(11, 10, 20, 0.98);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(28px);
+    -webkit-backdrop-filter: blur(28px);
     border-bottom: 1px solid var(--border-subtle);
-    padding: 2rem 1.5rem;
-    gap: 1.25rem;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
-    transform: translateY(-130%);
+    padding: 1.25rem 1.25rem 2rem;
+    gap: 0.4rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.85);
+    transform: translateY(-120%);
     opacity: 0;
     pointer-events: none;
-    transition: all var(--transition-smooth);
+    transition: transform var(--transition-smooth), opacity var(--transition-smooth);
+    z-index: 999;
   }
 
   #nav-toggle:checked ~ .nav-links {
@@ -1974,44 +2084,392 @@ a {
     pointer-events: auto;
   }
 
+  .nav-links a:not(.btn-nav) {
+    font-size: 1.05rem;
+    font-weight: 600;
+    padding: 0.8rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    width: 100%;
+  }
+
   .btn-nav {
+    width: 100%;
     text-align: center;
+    justify-content: center;
+    margin-top: 0.75rem;
+    padding: 0.85rem 1.5rem;
+    font-size: 1rem;
   }
 
-  .hero-title {
-    font-size: 2.45rem;
+  /* Section Spacing on Mobile */
+  .section {
+    padding: 3.5rem 0;
   }
 
+  .section-header {
+    margin-bottom: 2rem;
+  }
+
+  .section-tag {
+    font-size: 0.82rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 0.4rem;
+  }
+
+  .section-subtitle,
+  .page-banner-desc {
+    font-size: 0.98rem;
+    line-height: 1.65;
+    margin-top: 0.45rem;
+  }
+
+  /* Interior Page Header */
+  .page-header-section {
+    padding: 3rem 0 2rem;
+    margin-bottom: 2.25rem;
+  }
+
+  .breadcrumb {
+    font-size: 0.75rem;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-bottom: 0.65rem;
+  }
+
+  /* Horizontal Swipeable Section Nav Pills */
+  .page-nav-bar {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    gap: 0.5rem;
+    padding: 0.35rem 0.6rem;
+    margin: 1rem 0 1.75rem;
+    border-radius: var(--radius-full);
+  }
+
+  .page-nav-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-bar-label {
+    flex-shrink: 0;
+    font-size: 0.75rem;
+    padding: 0 0.35rem 0 0.4rem;
+  }
+
+  .nav-pill-link {
+    flex-shrink: 0;
+    white-space: nowrap;
+    font-size: 0.82rem;
+    padding: 0.35rem 0.85rem;
+  }
+
+  /* Hero Elements on Mobile */
+  .hero-section {
+    padding: 2.5rem 0 3.5rem;
+  }
+
+  .hero-role {
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .role-tag {
+    font-size: 0.82rem;
+    padding: 0.35rem 0.85rem;
+  }
+
+  .status-badge {
+    font-size: 0.82rem;
+    padding: 0.45rem 1rem;
+    gap: 0.6rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+    line-height: 1.68;
+    margin-bottom: 2rem;
+  }
+
+  /* Stacked Full-Width Action Buttons */
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.8rem;
+    margin-bottom: 2.25rem;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.88rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  /* Sleek Compact 3-Column Metrics Row */
   .hero-stats {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    padding-top: 1.25rem;
   }
 
+  .stat-card {
+    text-align: center;
+    padding: 0.65rem 0.35rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 10px;
+    border: 1px solid var(--border-subtle);
+  }
+
+  .stat-num {
+    font-size: 1.55rem;
+  }
+
+  .stat-label {
+    font-size: 0.7rem;
+    line-height: 1.25;
+    margin-top: 0.2rem;
+  }
+
+  /* Cards & Glass Panels */
+  .glass-panel {
+    padding: 1.35rem 1.15rem;
+    border-radius: 14px;
+  }
+
+  .glass-profile-card {
+    padding: 1.35rem 1.15rem;
+  }
+
+  .about-portrait-card {
+    padding: 1.25rem 1rem;
+  }
+
+  .portrait-image-wrapper {
+    height: 340px;
+  }
+
+  .award-card,
+  .edu-card,
+  .timeline-content {
+    padding: 1.35rem 1.15rem;
+  }
+
+  /* Detail Items Stacked on Mobile */
+  .detail-item {
+    flex-direction: column;
+    gap: 0.2rem;
+    font-size: 0.95rem;
+  }
+
+  .detail-value {
+    text-align: left;
+  }
+
+  /* Education Card Elements */
+  .edu-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .edu-degree {
+    font-size: 1.15rem;
+  }
+
+  .edu-school {
+    font-size: 0.95rem;
+  }
+
+  .edu-desc {
+    font-size: 0.92rem;
+    line-height: 1.6;
+  }
+
+  /* Timeline on Mobile */
   .timeline::before {
     left: 10px;
   }
 
   .timeline-item {
-    padding-left: 35px;
+    padding-left: 36px;
+    margin-bottom: 2rem;
   }
 
   .timeline-marker {
-    left: 3px;
+    left: 2px;
+    top: 22px;
+    width: 14px;
+    height: 14px;
   }
 
+  .timeline-title {
+    font-size: 1.35rem;
+  }
+
+  .timeline-org {
+    font-size: 0.95rem;
+    margin-bottom: 0.85rem;
+  }
+
+  .timeline-body {
+    font-size: 0.98rem;
+    line-height: 1.65;
+    margin-bottom: 1.15rem;
+  }
+
+  /* Single Column Grids */
   .awards-grid,
   .skills-grid,
   .social-showcase-grid {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
   }
 
+  /* Semantic Table Mobile Support */
+  .table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 1.25rem 0;
+  }
+
+  .custom-table {
+    min-width: 580px;
+  }
+
+  .custom-table th,
+  .custom-table td {
+    padding: 0.85rem 1rem;
+    font-size: 0.88rem;
+  }
+
+  /* Contact Form & Method Layout */
+  .contact-method {
+    gap: 0.85rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .method-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .method-link {
+    word-break: break-all;
+    font-size: 0.92rem;
+  }
+
+  /* CRITICAL: 16px form font size strictly prevents iOS Safari automatic zoom-in */
+  .form-group input,
+  .form-group textarea {
+    font-size: 16px !important;
+    padding: 0.75rem 0.9rem;
+  }
+
+  .social-pill-btn {
+    padding: 0.45rem 0.85rem;
+    font-size: 0.82rem;
+  }
+
+  /* Footer on Mobile */
   .footer-content {
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.1rem;
     text-align: center;
+    padding: 1.5rem 0;
   }
 
   .footer-social-links {
     justify-content: center;
+    gap: 0.85rem;
+  }
+}
+
+/* --- 4. Compact Smartphones (<= 480px) --- */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .nav-container {
+    padding: 0.75rem 1rem;
+  }
+
+  .glass-panel {
+    padding: 1.15rem 0.95rem;
+    border-radius: 12px;
+  }
+
+  .profile-header {
+    gap: 0.85rem;
+    margin-bottom: 1.15rem;
+  }
+
+  .avatar-ring {
+    width: 80px;
+    height: 80px;
+  }
+
+  .portrait-image-wrapper {
+    height: 290px;
+  }
+
+  .hero-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.4rem;
+  }
+
+  .stat-card {
+    padding: 0.55rem 0.25rem;
+  }
+
+  .stat-num {
+    font-size: 1.35rem;
+  }
+
+  .stat-label {
+    font-size: 0.65rem;
+  }
+
+  .role-tag {
+    font-size: 0.76rem;
+    padding: 0.3rem 0.7rem;
+  }
+
+  .status-badge {
+    font-size: 0.76rem;
+    padding: 0.4rem 0.85rem;
+  }
+
+  .social-card {
+    padding: 1.25rem 1rem;
+  }
+}
+
+/* --- 5. Micro Screens (<= 360px) --- */
+@media (max-width: 360px) {
+  .hero-stats {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+
+  .stat-card {
+    padding: 0.65rem 0.5rem;
+  }
+
+  .logo {
+    font-size: 1.1rem;
   }
 }
