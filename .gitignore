@@ -10,3 +10,7 @@ Thumbs.db
 
 # Temporary / Log files
 *.log
+
+# Design & Academic Deliverables (kept locally)
+wireframes/
+information-architecture.*

@@ -25,16 +25,6 @@ A modern, responsive, high-performance portfolio website showcasing academic dis
 
 ---
 
-## 📐 Design & Architecture Deliverables
-* **Information Architecture**:
-  - Image: `information-architecture.png`
-  - Vector: `information-architecture.svg`
-* **Traditional B&W Wireframes**:
-  - All 7 page blueprints located in `wireframes/`
-  - Interactive viewer: `wireframes/index.html`
-
----
-
 ## 🚀 Technologies Used
 * **HTML5**: Semantic markup, accessible labels, clean tables.
 * **CSS3**: Responsive flexbox & grid, custom properties, glassmorphism, pure CSS mobile menu.
